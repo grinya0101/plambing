@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roof Quote USA | Roofing Estimates from Local Pros</title>
+  <meta name="description" content="Request a no-obligation roofing estimate for roof repair, roof replacement, storm damage inspections, and gutter services from local roofing professionals in your area." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Roof Quote USA home">
+        <img src="logo.svg" alt="Roof Quote USA" />
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#trust">Why homeowners choose us</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="header-cta" href="#quote-form">Get My Quote</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Roofing estimates across the USA</div>
+          <h1>Get a roofing quote from local professionals in your area.</h1>
+          <p class="hero-subtitle">Request help for roof repair, replacement, storm damage, leaks, missing shingles, and gutter issues. A roofing specialist can review your request and follow up with next steps.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#quote-form">Request Free Estimate</a>
+            <a class="btn btn-secondary" href="#services">View Services</a>
+          </div>
+          <div class="trust-strip" aria-label="Trust benefits">
+            <span>No-obligation request</span>
+            <span>Fast local follow-up</span>
+            <span>Residential roofing</span>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Roofing quote request form preview">
+          <img src="roof-hero.svg" alt="Professional roofing crew working on a residential roof" class="hero-image" />
+          <div class="floating-proof">
+            <strong>Need roof help?</strong>
+            <span>Start with a free estimate request.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section" id="quote-form">
+      <div class="container quote-grid">
+        <div class="quote-info">
+          <span class="section-label">Start here</span>
+          <h2>Tell us what roofing service you need.</h2>
+          <p>Complete the short form and your request can be routed to a roofing professional who serves your area. Use accurate contact information so the contractor can confirm details.</p>
+          <ul class="check-list">
+            <li>Roof leak and roof repair requests</li>
+            <li>Roof replacement estimates</li>
+            <li>Storm, wind, and hail damage inspection requests</li>
+            <li>Gutter and exterior water-control services</li>
+          </ul>
+        </div>
+
+        <form class="lead-form" id="leadForm" method="POST" action="" novalidate>
+          <div class="form-heading">
+            <h3>Free Roofing Estimate Request</h3>
+            <p>Fields marked with * are required.</p>
+          </div>
+
+          <div class="form-row two-cols">
+            <label>First name *
+              <input type="text" name="first_name" autocomplete="given-name" required />
+            </label>
+            <label>Last name *
+              <input type="text" name="last_name" autocomplete="family-name" required />
+            </label>
+          </div>
+
+          <div class="form-row two-cols">
+            <label>Phone number *
+              <input type="tel" name="phone" autocomplete="tel" placeholder="(555) 555-5555" required />
+            </label>
+            <label>Email address
+              <input type="email" name="email" autocomplete="email" placeholder="you@example.com" />
+            </label>
+          </div>
+
+          <div class="form-row two-cols">
+            <label>ZIP code *
+              <input type="text" name="zip" inputmode="numeric" maxlength="10" placeholder="30301" required />
+            </label>
+            <label>Are you the homeowner? *
+              <select name="homeowner" required>
+                <option value="">Select one</option>
+                <option>Yes</option>
+                <option>No</option>
+                <option>Authorized decision maker</option>
+              </select>
+            </label>
+          </div>
+
+          <label>What do you need help with? *
+            <select name="service" required>
+              <option value="">Select service</option>
+              <option>Roof repair / roof leak</option>
+              <option>Roof replacement</option>
+              <option>Storm / hail damage inspection</option>
+              <option>Missing or damaged shingles</option>
+              <option>Gutters / drainage issue</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+
+          <label>Project timeline *
+            <select name="timeline" required>
+              <option value="">Select timeline</option>
+              <option>As soon as possible</option>
+              <option>Within 1-2 weeks</option>
+              <option>Within 1-3 months</option>
+              <option>Just researching options</option>
+            </select>
+          </label>
+
+          <label>Briefly describe the roofing issue
+            <textarea name="message" rows="4" placeholder="Example: small leak near the kitchen ceiling after heavy rain."></textarea>
+          </label>
+
+          <label class="consent">
+            <input type="checkbox" name="consent" required />
+            <span>By submitting this form, I agree to be contacted about my roofing request by phone, text, or email. Consent is not a condition of purchase. Message and data rates may apply.</span>
+          </label>
+
+          <button class="btn btn-primary form-submit" type="submit">Submit My Roofing Request</button>
+          <p class="form-note">Your information is used to process your estimate request. See our <a href="privacy.html">Privacy Policy</a>.</p>
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="services section-pad" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Roofing services</span>
+          <h2>Common projects homeowners request.</h2>
+          <p>From urgent leaks to full replacement quotes, the form helps identify the service you need and your project timeline.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <img src="roof-repair.svg" alt="Roof repair illustration" />
+            <h3>Roof Repair</h3>
+            <p>Leaks, missing shingles, flashing issues, worn roof sections, and minor roof damage.</p>
+          </article>
+          <article class="service-card">
+            <img src="roof-replacement.svg" alt="Roof replacement illustration" />
+            <h3>Roof Replacement</h3>
+            <p>Request an estimate for asphalt shingle replacement, aging roofs, or larger roof projects.</p>
+          </article>
+          <article class="service-card">
+            <img src="storm-inspection.svg" alt="Storm damage roof inspection illustration" />
+            <h3>Storm Damage</h3>
+            <p>Ask about inspections after strong wind, hail, heavy rain, or visible exterior damage.</p>
+          </article>
+          <article class="service-card">
+            <img src="gutters.svg" alt="Gutter service illustration" />
+            <h3>Gutters</h3>
+            <p>Get help with clogged gutters, damaged sections, water overflow, and replacement requests.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how section-pad" id="how-it-works">
+      <div class="container how-grid">
+        <div>
+          <span class="section-label">Simple process</span>
+          <h2>How your request works.</h2>
+          <p class="muted">The process is built for homeowners who want a clear next step without pressure.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><span>1</span><div><h3>Submit the form</h3><p>Tell us your ZIP code, service type, and project timeline.</p></div></div>
+          <div class="step"><span>2</span><div><h3>Request is reviewed</h3><p>Your details help determine the roofing service and location needed.</p></div></div>
+          <div class="step"><span>3</span><div><h3>Local follow-up</h3><p>A roofing professional may contact you to schedule an estimate or inspection.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust section-pad" id="trust">
+      <div class="container trust-grid">
+        <div class="trust-panel">
+          <span class="section-label">Built for confidence</span>
+          <h2>Clear information before homeowners submit.</h2>
+          <p>People hesitate when a roofing page looks vague. This page uses plain language, a clean form, clear consent text, and service-specific questions to create a stronger request.</p>
+          <div class="stats">
+            <div><strong>24/7</strong><span>Online request form</span></div>
+            <div><strong>4</strong><span>Main roofing categories</span></div>
+            <div><strong>USA</strong><span>Residential lead flow</span></div>
+          </div>
+        </div>
+        <div class="trust-list">
+          <div><strong>Transparent request</strong><p>The form explains what happens after submission.</p></div>
+          <div><strong>Better lead quality</strong><p>Homeowner, ZIP, service type, and timeline help filter requests.</p></div>
+          <div><strong>Compliant positioning</strong><p>The site avoids fake licenses, fake reviews, and guaranteed claims.</p></div>
+          <div><strong>Mobile-first design</strong><p>Designed for Facebook and Instagram traffic on phones.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section-pad" id="faq">
+      <div class="container">
+        <div class="section-header narrow">
+          <span class="section-label">Questions</span>
+          <h2>Roofing estimate FAQ.</h2>
+        </div>
+        <div class="faq-list">
+          <details open>
+            <summary>Is the estimate request free?</summary>
+            <p>Yes. Submitting the form is free and does not create an obligation to buy roofing services.</p>
+          </details>
+          <details>
+            <summary>Do you provide roofing services directly?</summary>
+            <p>This website is designed as a roofing quote request and lead generation property. Service availability and contractor details depend on the local provider who follows up.</p>
+          </details>
+          <details>
+            <summary>Should I verify the contractor before hiring?</summary>
+            <p>Yes. Homeowners should independently verify licensing, insurance, reviews, scope of work, and written estimates before choosing any contractor.</p>
+          </details>
+          <details>
+            <summary>What information should I prepare?</summary>
+            <p>Prepare your ZIP code, service type, roof issue, project timeline, and the best phone number for follow-up.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta section-pad">
+      <div class="container final-card">
+        <div>
+          <span class="section-label">Ready to start?</span>
+          <h2>Request a roofing estimate today.</h2>
+          <p>Describe the roof issue and submit the form. A local provider can review your request and contact you with next steps.</p>
+        </div>
+        <a class="btn btn-primary" href="#quote-form">Get My Roofing Quote</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="logo.svg" alt="Roof Quote USA" class="footer-logo" />
+        <p>Roof Quote USA is a lead generation property for roofing estimate requests. We are not a roofing contractor and do not perform roofing services directly.</p>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <a href="#services">Roof Repair</a>
+        <a href="#services">Roof Replacement</a>
+        <a href="#services">Storm Damage</a>
+        <a href="#services">Gutters</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Roof Quote USA. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
